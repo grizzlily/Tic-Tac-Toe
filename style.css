@@ -1,0 +1,104 @@
+body {
+    font-family: 'Poppins', Arial, sans-serif;
+    text-align: center;
+    background: linear-gradient(120deg, #92f7b9, #e6abff);
+    margin: 0;
+    padding: 0;
+    color: #fff;
+}
+#menu button {
+    padding: 12px 25px;
+    font-size: 1.2em;
+    font-weight: bold;
+    background: linear-gradient(120deg, #f093fb, #f5576c);
+    color: #fff;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    transition: background 0.3s, transform 0.2s, box-shadow 0.3s;
+    margin: 10px;
+}
+
+#menu button:hover {
+    background: linear-gradient(120deg, #ee6a8c, #d0455b);
+    transform: translateY(-2px);
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.3);
+}
+
+#menu button:active {
+    background: linear-gradient(120deg, #d0455b, #a83247);
+    transform: translateY(2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    margin: 20px 0;
+    font-size: 2.5em;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+#game-board {
+    display: grid;
+    grid-template-columns: repeat(3, 120px);
+    grid-gap: 10px;
+    justify-content: center;
+    margin: 30px auto;
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.cell {
+    width: 120px;
+    height: 120px;
+    background: linear-gradient(120deg, #7ec91a, #e38e2d);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.5em;
+    font-weight: bold;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.3s;
+}
+
+.cell:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.cell.taken {
+    cursor: not-allowed;
+    background: linear-gradient(120deg, #ccc, #ddd);
+    color: #666;
+}
+
+#status {
+    font-size: 1.5em;
+    margin: 20px 0;
+    font-weight: bold;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+#reset {
+    padding: 12px 25px;
+    font-size: 1.2em;
+    font-weight: bold;
+    background: linear-gradient(120deg, #42e695, #3bb2b8);
+    color: #fff;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    transition: background 0.3s, transform 0.2s, box-shadow 0.3s;
+}
+
+#reset:hover {
+    background: linear-gradient(120deg, #2bc166, #229ea0);
+    transform: translateY(-2px);
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.3);
+}
