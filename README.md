@@ -11,7 +11,7 @@ Core Mechanics:
 
 Instructions:
 
-• To start the game, simply open a web browser and go to http://localhost:5000 or any designated online address.
+• To start the game, simply open a web browser and go to [https://grizzlily.github.io/Tic-Tac-Toe/] or any designated online address.
 
 • Click on the cells of the 3x3 grid to place your "X" or "O".
 
